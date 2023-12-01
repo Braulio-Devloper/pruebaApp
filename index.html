@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi PWA</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título de la aplicación -->
+    <h1>Mi PWA</h1>
+
+    <!-- Formulario para hacer una publicación -->
+    <form id="post-form">
+        <!-- Campo para el texto de la publicación -->
+        <label for="post-text">Texto de la publicación:</label>
+        <textarea id="post-text" required></textarea>
+
+        <!-- Campo para la ubicación de la publicación -->
+        <label for="post-location">Ubicación:</label>
+        <div id="post-location"></div>
+
+        <!-- Campo para la foto de la publicación -->
+        <label for="post-photo">Foto:</label>
+        <input type="file" id="post-photo" accept="image/*" capture="camera">
+
+        <!-- Botón para enviar la publicación -->
+        <button type="submit">Publicar</button>
+    </form>
+
+    <!-- Contenedor donde se mostrarán las publicaciones -->
+    <div id="posts-container"></div>
+
+    <!-- Mensaje que muestra el estado de la conexión a internet -->
+    <p id="connection-status"></p>
+
+    <!-- Vista previa de la cámara -->
+    <video id="camera-preview" autoplay></video>
+    <!-- Botón para tomar una foto -->
+    <button id="take-photo">Tomar foto</button>
+
+    <!-- Mapa de Google Maps -->
+    <div id="map"></div>
+
+    <!-- Enlace al script JavaScript principal -->
+    <script src="main.js"></script>
+</body>
+</html>
+
+
